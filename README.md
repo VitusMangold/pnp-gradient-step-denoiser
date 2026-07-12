@@ -95,6 +95,7 @@ python experiments/test_gsd_benchmark.py     # Poisson: ADMM vs. FBS
 - E. K. Ryu, J. Liu, S. Wang, X. Chen, Z. Wang, W. Yin (2019).
   *Plug-and-Play Methods Provably Converge with Properly Trained
   Denoisers.* ICML.
+- A. Ebner, M. Haltmeier (2022).*Plug-and-Play image reconstruction is a convergent regularization method.*
 - K. Zhang, W. Zuo, Y. Chen, D. Meng, L. Zhang (2017). *Beyond a Gaussian
   Denoiser: Residual Learning of Deep CNN for Image Denoising.* IEEE TIP.
 - D. Martin, C. Fowlkes, D. Tal, J. Malik (2001). *A Database of Human
