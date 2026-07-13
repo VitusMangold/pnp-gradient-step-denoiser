@@ -7,9 +7,9 @@ Code accompanying the master's thesis
 > Vitus Mangold, University of Mannheim, 2026
 > Chair of Mathematical Optimization (Prof. Dr. M. Staudigl)
 
-The repository implements a **Gradient Step Denoiser (GSD)** — a denoiser
+The repository implements a **Gradient Step Denoiser (GSD)**, a denoiser
 defined analytically as a gradient step on a learned scalar energy
-landscape, `D(x) = x − ∇ψ(x)` (Hurault et al., 2022) — and plugs it into
+landscape, `D(x) = x − ∇ψ(x)` (Hurault et al., 2022) and plugs it into
 the **Plug-and-Play (PnP)** solvers **FBS** and **ADMM** (Ryu et al., 2019)
 to solve three inverse problems: deblurring, inpainting, and reconstruction
 under Poisson noise.
@@ -19,9 +19,9 @@ under Poisson noise.
 The potential network aggregates features via **global average pooling
 (GAP)**. As a consequence, the per-pixel gradient magnitude scales like
 `1/(H·W)`: a model trained on 40×40 patches is ~40× too weak on 256×256
-test images. We verify this quantitatively — the measured full-image/patch
+test images. We verify this quantitatively, the measured full-image/patch
 denoising-gain ratio of **0.023** matches the theoretical prediction
-`40²/256² ≈ 0.024` — and compensate it at run time by rescaling the
+`40²/256² ≈ 0.024` and compensate it at run time by rescaling the
 gradient with `(H·W)/40²` ("variant A", which keeps the operator a
 conservative vector field). See `experiments/analyze_scale_effect.py` and
 Section 5.2 of the thesis.
