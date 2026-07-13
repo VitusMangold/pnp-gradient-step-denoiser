@@ -31,19 +31,19 @@ Section 5.2 of the thesis.
 ```
 .
 ├── data/
-│   └── dataset.py             # BSD500 AWGN dataset (residual learning)
+│   └── dataset.py              # BSD500 AWGN dataset (residual learning)
 ├── models/
-│   ├── architectures.py       # PotentialNetwork + GradientStepDenoiser
-│   └── pnp_solvers.py         # Generic PnP-FBS and PnP-ADMM
+│   ├── architectures.py        # PotentialNetwork + GradientStepDenoiser
+│   └── pnp_solvers.py          # Generic PnP-FBS and PnP-ADMM
 ├── training/
-│   └── train_gsd.py           # GSD training (double backpropagation)
+│   └── train_gsd.py            # GSD training (double backpropagation)
 ├── experiments/
-│   ├── analyze_denoiser.py    # Identity property Φ_σ(y) → y as σ → 0
-│   ├── analyze_scale_effect.py# GAP size-scaling demonstration
-│   ├── test_illposed_pnp.py   # Deblurring (PnP-FBS, σ-sweep)
-│   ├── test_inpainting.py     # Inpainting, 70% missing pixels (PnP-FBS)
-│   └── test_gsd_benchmark.py  # Poisson noise: PnP-ADMM vs. PnP-FBS
-└── saved_models/              # Trained checkpoints GSD_sigma{σ}.pth
+│   ├── analyze_denoiser.py     # Identity property Φ_σ(y) → y as σ → 0
+│   ├── analyze_scale_effect.py # GAP size-scaling demonstration
+│   ├── test_illposed_pnp.py    # Deblurring (PnP-FBS, σ-sweep)
+│   ├── test_inpainting.py      # Inpainting, 70% missing pixels (PnP-FBS)
+│   └── test_gsd_benchmark.py   # Poisson noise: PnP-ADMM vs. PnP-FBS
+└── saved_models/               # Trained checkpoints GSD_sigma{σ}.pth
 ```
 
 ## Setup
